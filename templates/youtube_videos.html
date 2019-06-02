@@ -5,9 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-<iframe width="420" height="315" src="https://www.youtube.com/embed/z_B0PF8Ug00" frameborder="0"
+{%  for i in videolink %}
+<iframe width="420" height="315" src= " {{ i }}" frameborder="1"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+{%  endfor  %}
 
 </body>
 </html>
